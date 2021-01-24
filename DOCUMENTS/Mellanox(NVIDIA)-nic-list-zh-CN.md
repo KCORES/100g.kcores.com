@@ -15,7 +15,7 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 - Mellanox (Nvidia) 网卡型号众多, 有不少朋友买错型号, 因此整理了一份型号列表供大家参考.  
 - 注意, 本列表也存在书写错误的可能, 购买时务必参考官方文档(虽然可能也有细节上的问题), 切记不要相信配图(有可能是错的), 以及详细咨询卖方, 确认是你想要的网卡后再购买 (实在不行要求卖家保证如果不是该型号可以退换货以避免损失).    
 - 一个很重要的参考是, 如果你买的网卡的端口带宽之和超过了 PCIe 提供的带宽, 那 100% 跑不满速度. 不要看到 QSFP28 接口就以为是 100G 网卡. 不要以为两个 QSFP+ 接口 PCIe 3.0 x8 就够了. 没有魔法.  
-- 经常有商家标记错误网卡, 比如 50G/56G 网卡当 100G 网卡卖, 相信我, 他们也不懂的, 看看下面的表格, 232 个型号, 比乘法口诀表大多了. 弄混很正常. 一定要仔细确认型号.    
+- 经常有商家标记错误网卡, 比如 50G/56G 网卡当 100G 网卡卖, 相信我, 他们也不懂的, 看看下面的表格, 200+ 型号, 比乘法口诀表大多了. 弄混很正常. 一定要仔细确认型号.    
 - VPI 卡同时支持 以太网 和 Infiniband. 不过较早的 VPI 卡虽然 Infiniband 支持 40G, 但是以太网只有 10G 需要注意 (Connectx-2 VPI 系列, ConnectX-3 VPI 的  MCX353A-QCBT, MCX354A-QCBT).  
 - 经证实同一系列的卡很可能采用了同型号的芯片, 因此存在换固件解锁速度/单口变双口的可能. 比如我们著名的 [OCP2PCIe 转接卡项目](https://github.com/KCORES/OCP2PCIe). 
 - 由于 Mellanox 也是 IC 供货商, 因此存在大量的 OEM/定制 网卡, 所以本列表可能收录不全. 遇到 OEM 卡一定要仔细辨别型号.    
@@ -122,9 +122,13 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 | MCX542B-ACAN                 | 5A991   | ConnectX-5 EN          | 25 GbE              | 2 x SFP28                    | 1/10/25                                       | Gen 3.0 x8                                        | OCP 2.0 Type 1 | with Host Management, No Bracket          |
 | MCX542B-ACUN                 |         | ConnectX-5 EN          | 25 GbE              | 2 x SFP28                    | 1/10/25                                       | Gen 3.0 x8                                        | OCP 2.0 Type 1 | UEFI Enabled                              |
 | MCX545B-CCUN                 |         | ConnectX-5 EN          | 100 GbE             | 1 x QSFP28                   | 1/10/25/40/50/100                             | Gen 3.0 x16                                       | OCP 2.0 Type 1 | UEFI Enabled                              |
-| MCX545B-ECAN                 | 5A991   | ConnectX-5 VPI         | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 1 | No Bracket, With Host Management          | 
-| MCX545M-ECAN                 | 5A991   | ConnextX-5 VPI         | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | no bracket, Mellanox Multi-Host support   |
-| MCX545A-ECAN                 | 5A991   | ConnextX-5 VPI         | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | No bracket                                |
+| MCX555A-ECAT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | tall bracket | 
+| MCX556A-ECAT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 2 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | tall bracket | 
+| MCX556A-ECUT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 2 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | UEFI enabled | 
+| MCX556A-EDAT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 2 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | tall bracket | 
+| MCX545B-ECAN                 | 5A991   | ConnectX-5 VPI OCP     | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 1 | No Bracket, With Host Management          | 
+| MCX545M-ECAN                 | 5A991   | ConnextX-5 VPI OCP     | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | no bracket, Mellanox Multi-Host support   |
+| MCX545A-ECAN                 | 5A991   | ConnextX-5 VPI OCP     | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | No bracket                                |
 | MCX545A-CCAN                 | 5A991   | ConnextX-5 EN          | 100 GbE             | 1 x QSFP28                   | 1/10/25/40/50/100                             | Gen 3.0 x16                                       | OCP 2.0 Type 2 | No Bracket                                |
 | MCX545A-CCUN                 | 5A991   | ConnextX-5 EN          | 100 GbE             | 1 x QSFP28                   | 1/10/25/40/50/100                             | Gen 3.0 x16                                       | OCP 2.0 Type 2 | UEFI Enabled                              |
 | MCX546A-CDAN                 | 5A991   | ConnextX-5 EN          | 100 GbE             | 2 x QSFP28                   | 1/10/25/40/50/100                             | Gen 4.0 x16                                       | OCP 2.0 Type 2 | ConnectX-5 Ex                             |
@@ -243,6 +247,9 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 | MBF1L516B-CSNAT              |         | BlueField SmartNIC DPU | 100 GbE             | 2 x QSFP28                   |                                               | Gen 4.0 x16                                       | PCIE FHHL                           | E-Series 16 cores, No Crypto, 16GB on-board DDR |      
 
 
+
+
+
 ## 注释  
 
 | 注释 | 信息 |
@@ -251,8 +258,8 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 | **1** | IPsec/TLS/AES-XTS 硬件编码/解码功能    |
 | **2** | 当使用 QSFP56 时, 50G 可以拆分为 2x25G NRZ 或 1x50G PAM4.  |
 | **3** | 当使用 QSFP56 时, 100G 可以拆分为 4x25G NRZ 或 2x50G PAM4.  |
-| **Gen 3.0 2x16 Socket Direct** | 指的是需要两个 PCIe Gen 3.0 x16 接口才能跑满速度, 另一个带宽扩展卡卡通过内部电缆连接至网卡主卡.  |
-| **Gen 3.0 x16 + auxiliary card with PCIe Gen3.0 x16** | 指的是需要两个 PCIe Gen 3.0 x16 接口才能跑满速度, 另一个带宽扩展卡卡通过内部电缆连接至网卡主卡. | 
+| **Gen 3.0 2x16 Socket Direct** | 为每个独立 CPU Socket 提供单独的 PCIe 访问通道, 详情见 [socket-direct](https://www.mellanox.com/products/ethernet-adapters/socket-direct)  |
+| **Gen 3.0 x16 + auxiliary card with PCIe Gen3.0 x16** | 同上 | 
 
 
 # 产品简述  
@@ -272,7 +279,8 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 | ConnectX-4 VPI         | https://www.mellanox.com/files/doc-2020/pb-connectx-4-vpi-card.pdf                                                       |  
 | Innova                 | https://www.mellanox.com/related-docs/prod_adapter_cards/PB_Innova_Flex4_Lx_EN.pdf                                       |
 | ConnectX-5 EN          | https://www.mellanox.com/files/doc-2020/pb-connectx-5-en-card.pdf                                                        |
-| ConnectX-5 VPI         | https://www.mellanox.com/files/doc-2020/pb-connectx-5-vpi-ocp.pdf                                                        |
+| ConnectX-5 VPI         | https://www.mellanox.com/files/doc-2020/pb-connectx-5-vpi-card.pdf                                                       |
+| ConnectX-5 VPI OCP     | https://www.mellanox.com/files/doc-2020/pb-connectx-5-vpi-ocp.pdf                                                        |
 | ConnectX-5 VPI SD      | https://www.mellanox.com/sites/default/files/doc-2020/pb-connectx-5-vpi-card-socket-direct.pdf                           | 
 | Innova-2               | https://www.mellanox.com/sites/default/files/doc-2020/pb-innova-2-flex.pdf                                               | 
 | eMH                    | https://www.mellanox.com/sites/default/files/doc-2020/sb-externally-connected-multi-host.pdf                             | 

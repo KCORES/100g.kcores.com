@@ -16,7 +16,7 @@ Mellanox(NVIDIA)-nic-list-jp.md
 - Mellanox (NVIDIA) の Lan カードは型番が多く、間違って購入した友人も多いので、参考までに型番リストをまとめました.
 - 注意、本一覧も誤った性、存在书写購入時、ぜひ参考公式ドキュメント(細部の問題もある)は、忘れて信じないよう配図(せいの)の可能性がある、と詳細諮問売り手、たいはあなたのlanカードを確認後再購入.
 - 重要なポイントは、お使いの Lan カードのポート帯域幅の合計が PCIe が提供する帯域幅を超える場合、速度に 100% 満たないということです。QSFP28 インターフェースを見て 100G Lan カードだと思ってはいけません。2つの QSFP+ インターフェース PCIe 3.0 × 8 で十分だと思ってはいけません. 魔法はない.
-- よくある商人は間違った Lan カードをマークして、たとえば 50G/56G Lan カード 100G Lan カードを売って、私を信じて、彼らはまたわからないで、次の表を見て、実際には 232 のモデルなので、混同するのは正常です。型番をよく確認してください。
+- よくある商人は間違った Lan カードをマークして、たとえば 50G/56G Lan カード 100G Lan カードを売って、私を信じて、彼らはまたわからないで、次の表を見て、実際には 200+ のモデルなので、混同するのは正常です。型番をよく確認してください。
 - VPI カードは ETH と Infinoband の両方をサポートする。ただし、以前の VPI カードは Infiniband は 40G に対応していましたが、イーサネットは 10G でした. (Connectx-2 VPI, ConnectX-3 VPI MCX353A-QCBT, MCX354A-QCBT).
 - 同系列のカードは同型番のチップを采用している可能性が高いため、ファームウェアを交换すると解錠速度/シングルポートが2ポートになる可能性があります。ご覧ください [OCP2PCIe](https://github.com/KCORES/OCP2PCIe). 
 - Mellanox は IC ベンダーでもあるため、大量の OEM / カスタム LAN カードが存在するため、本リストには収録されていない可能性がある。OEM カードの場合は、型番をよく見極めましょう。
@@ -124,9 +124,13 @@ Mellanox(NVIDIA)-nic-list-jp.md
 | MCX542B-ACAN                 | 5A991   | ConnectX-5 EN          | 25 GbE              | 2 x SFP28                    | 1/10/25                                       | Gen 3.0 x8                                        | OCP 2.0 Type 1 | with Host Management, No Bracket          |
 | MCX542B-ACUN                 |         | ConnectX-5 EN          | 25 GbE              | 2 x SFP28                    | 1/10/25                                       | Gen 3.0 x8                                        | OCP 2.0 Type 1 | UEFI Enabled                              |
 | MCX545B-CCUN                 |         | ConnectX-5 EN          | 100 GbE             | 1 x QSFP28                   | 1/10/25/40/50/100                             | Gen 3.0 x16                                       | OCP 2.0 Type 1 | UEFI Enabled                              |
-| MCX545B-ECAN                 | 5A991   | ConnectX-5 VPI         | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 1 | No Bracket, With Host Management          | 
-| MCX545M-ECAN                 | 5A991   | ConnextX-5 VPI         | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | no bracket, Mellanox Multi-Host support   |
-| MCX545A-ECAN                 | 5A991   | ConnextX-5 VPI         | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | No bracket                                |
+| MCX555A-ECAT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | tall bracket | 
+| MCX556A-ECAT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 2 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | tall bracket | 
+| MCX556A-ECUT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 2 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | UEFI enabled | 
+| MCX556A-EDAT                 |         | ConnectX-5 VPI         | 100GbE/EDR IB       | 2 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | PCIE HHHL  | tall bracket | 
+| MCX545B-ECAN                 | 5A991   | ConnectX-5 VPI OCP     | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 1 | No Bracket, With Host Management          | 
+| MCX545M-ECAN                 | 5A991   | ConnextX-5 VPI OCP     | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | no bracket, Mellanox Multi-Host support   |
+| MCX545A-ECAN                 | 5A991   | ConnextX-5 VPI OCP     | 100 GbE/EDR IB      | 1 x QSFP28                   | 1/10/25/40/50/100/SDR/DDR/QDR/FDR/EDR         | Gen 3.0 x16                                       | OCP 2.0 Type 2 | No bracket                                |
 | MCX545A-CCAN                 | 5A991   | ConnextX-5 EN          | 100 GbE             | 1 x QSFP28                   | 1/10/25/40/50/100                             | Gen 3.0 x16                                       | OCP 2.0 Type 2 | No Bracket                                |
 | MCX545A-CCUN                 | 5A991   | ConnextX-5 EN          | 100 GbE             | 1 x QSFP28                   | 1/10/25/40/50/100                             | Gen 3.0 x16                                       | OCP 2.0 Type 2 | UEFI Enabled                              |
 | MCX546A-CDAN                 | 5A991   | ConnextX-5 EN          | 100 GbE             | 2 x QSFP28                   | 1/10/25/40/50/100                             | Gen 4.0 x16                                       | OCP 2.0 Type 2 | ConnectX-5 Ex                             |
@@ -245,6 +249,7 @@ Mellanox(NVIDIA)-nic-list-jp.md
 | MBF1L516B-CSNAT              |         | BlueField SmartNIC DPU | 100 GbE             | 2 x QSFP28                   |                                               | Gen 4.0 x16                                       | PCIE FHHL                           | E-Series 16 cores, No Crypto, 16GB on-board DDR |      
 
 
+
 ## 注释  
 
 | 注释 | 信息 |
@@ -253,8 +258,8 @@ Mellanox(NVIDIA)-nic-list-jp.md
 | **1** | IPsec/TLS/AES-XTS Encoding/Decoding.    |
 | **2** | QSFP56 を使用する場合、50G は 2x25G NRZ または 1x50G PAM4 に分割することができます.  |
 | **3** | QSFP56 を使用する場合、50G は 2x25G NRZ または 1x50G PAM4 に分割することができます.  |
-| **Gen 3.0 2x16 Socket Direct** | これは、最大速度を実行するために 2 つの PCIe Gen 3.0 x16 インターフェイスが必要で、もう 1 つの帯域幅拡張カードは、Lan カードのメインカードに内部ケーブルで接続されていることを指します。  |
-| **Gen 3.0 x16 + auxiliary card with PCIe Gen3.0 x16** | これは、最大速度を実行するために 2 つの PCIe Gen 3.0 x16 インターフェイスが必要で、もう 1 つの帯域幅拡張カードは、Lan カードのメインカードに内部ケーブルで接続されていることを指します。 | 
+| **Gen 3.0 2x16 Socket Direct** | 個々のcpuソケットごとに個別のpcieアクセスチャネルを提供する  [socket-direct](https://www.mellanox.com/products/ethernet-adapters/socket-direct)  |
+| **Gen 3.0 x16 + auxiliary card with PCIe Gen3.0 x16** | 個々のcpuソケットごとに個別のpcieアクセスチャネルを提供する  [socket-direct](https://www.mellanox.com/products/ethernet-adapters/socket-direct) | 
 
 
 # 製品概要  
@@ -274,7 +279,8 @@ Mellanox(NVIDIA)-nic-list-jp.md
 | ConnectX-4 VPI         | https://www.mellanox.com/files/doc-2020/pb-connectx-4-vpi-card.pdf                                                       |  
 | Innova                 | https://www.mellanox.com/related-docs/prod_adapter_cards/PB_Innova_Flex4_Lx_EN.pdf                                       |
 | ConnectX-5 EN          | https://www.mellanox.com/files/doc-2020/pb-connectx-5-en-card.pdf                                                        |
-| ConnectX-5 VPI         | https://www.mellanox.com/files/doc-2020/pb-connectx-5-vpi-ocp.pdf                                                        |
+| ConnectX-5 VPI         | https://www.mellanox.com/files/doc-2020/pb-connectx-5-vpi-card.pdf                                                       |
+| ConnectX-5 VPI OCP     | https://www.mellanox.com/files/doc-2020/pb-connectx-5-vpi-ocp.pdf                                                        |
 | ConnectX-5 VPI SD      | https://www.mellanox.com/sites/default/files/doc-2020/pb-connectx-5-vpi-card-socket-direct.pdf                           | 
 | Innova-2               | https://www.mellanox.com/sites/default/files/doc-2020/pb-innova-2-flex.pdf                                               | 
 | eMH                    | https://www.mellanox.com/sites/default/files/doc-2020/sb-externally-connected-multi-host.pdf                             | 
