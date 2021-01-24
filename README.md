@@ -31,4 +31,4 @@ Mellanox (NVIDIA) の Lan カードは型番が多く、間違って購入した
 
 ## [全部列表见(中文)](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-zh-CN.md) 
 ## [Full List in English Version Click Here](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-en.md)  
-## [日本語型番リスト](./DOCUMENTS/Mellanox(NVIDIA)-nic-jp.md)
+## [日本語型番リスト](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-jp.md)
