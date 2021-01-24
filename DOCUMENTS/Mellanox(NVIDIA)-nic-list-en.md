@@ -8,7 +8,7 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 
 # Mellanox (NVIDIA) Network Adapter Model Shorthand table
 
-([中文](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-zh-CN.md) / [English](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-en.md)  / [日本語](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-jp.md))
+([中文](./Mellanox(NVIDIA)-nic-list-zh-CN.md) / [English](./Mellanox(NVIDIA)-nic-list-en.md)  / [日本語](./Mellanox(NVIDIA)-nic-list-jp.md))
 
 # Summary 
 
