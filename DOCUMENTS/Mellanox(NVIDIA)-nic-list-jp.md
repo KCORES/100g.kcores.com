@@ -8,7 +8,7 @@ Mellanox(NVIDIA)-nic-list-jp.md
 
 # Mellanox (NVIDIA) NIC 型番表  
 
-([中文](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-zh-CN.md) / [English](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-en.md)  / [日本語](./DOCUMENTS/Mellanox(NVIDIA)-nic-jp.md))
+([中文](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-zh-CN.md) / [English](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-en.md)  / [日本語](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-jp.md))
 
 # 简介 
 
