@@ -1,4 +1,4 @@
-# Mellanox (NVIDIA) Network Adapter Model Shorthand table
+# Mellanox (NVIDIA) Network Adapter Model List
 
 ![license-kcores-bandge](./assets/images/license-kcores.png)
 
@@ -9,6 +9,11 @@ Mellanox (Nvidia) 网卡型号众多, 有不少朋友买错型号, 因此整理�
 Mellanox (Nvidia) network card model is numerous, there are many guys to buy the wrong model, so I sorted out a model list for your guy's reference.   
 Mellanox (NVIDIA) の Lan カードは型番が多く、間違って購入した友人も多いので、参考までに型番リストをまとめました.  
 
+# Index
+
+* [全部列表见(中文)](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-zh-CN.md) 
+* [Full List in English Version Click Here](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-en.md)  
+* [日本語型番リスト](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-jp.md)
 
 # List
 
@@ -29,6 +34,3 @@ Mellanox (NVIDIA) の Lan カードは型番が多く、間違って購入した
 | MCX353A-FCCT                 |         | ConnectX-3 Pro VPI     | 56 GbE              | 1 x QSFP+                    | 1/10/40/56                                    | Gen 3.0 x8                                        | PCIE HHHL (Height 5.3cm) | |
 ......
 
-## [全部列表见(中文)](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-zh-CN.md) 
-## [Full List in English Version Click Here](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-en.md)  
-## [日本語型番リスト](./DOCUMENTS/Mellanox(NVIDIA)-nic-list-jp.md)
