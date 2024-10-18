@@ -1,7 +1,7 @@
 Mellanox(NVIDIA)-nic-list-zh-CN.md
 -----------------------------------
 
-- @version: 20210124:1  
+- @version: 20241019:2    
 - @author:  karminski <work.karminski@outlook.com>  
 - @license: [KCORES](https://github.com/KCORES/kcores-license)  
 
@@ -12,18 +12,15 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 
 # Summary 
 
-- Mellanox (Nvidia) network card model is numerous, there are many guys to buy the wrong model, so I sorted out a model list for your guy's reference. 
-- Notice, this list is may have an error, be sure to refer to the official document when buying (the official document may also have problems with the details). 
-- Remember, don't believe in pictures (could be wrong), as well as detailed consulting the seller, confirmed after the card you want to buy.  
-- It is important that if the network card with a combined port bandwidth that exceeds the bandwidth provided by the PCIe, that must not work at maximum speed.  
-- Do not look at the QSFP28 interface and think it is definitely a 100G network card.
-- Don't assume that PCIe 3.0x8 can be used with two QSFP+ interfaces, that's not enough.
-- Businesses often flag the wrong network card model, 50G/56G network card is sold as 100G network card. Believe me, they don't get it either. Look at the table below. 200+ models. Be sure to check the model number carefully.
-- VPI cards support both Ethernet and InfiniBand. While older VPI cards supported 40G in InfiniBand, but Ethernet only run at 10G (Connectx-2 VPI series and MCX353A-QCBT, MCX354A-QCBT). 
-- It has been confirmed that the same series of cards are likely to use the same type of chip, so there is the possibility of changing firmware unlock speed/single port to double port. For more detail please see our repo [OCP2PCIe](https://github.com/KCORES/OCP2PCIe).
-- Since Mellanox is also an IC supplier, there is a large number of OEM/ custom network cards available, so this list may not be complete. When you encounter an OEM card, you must carefully identify the model number.
-- This document uses the [KCORES](https://github.com/KCORES/kcores-license) license.
-- Issues / Pull Requests on this document are welcome, don't be shy.
+- Mellanox (Nvidia) has numerous network card models. Many people have bought the wrong models, so this list of models has been compiled for reference.
+- Note that this list may also contain writing errors. When purchasing, be sure to refer to the official documentation (although there may be issues in details), remember not to trust the images (which may be incorrect), and consult the seller in detail. Confirm that it's the network card you want before purchasing (if necessary, ask the seller to guarantee that if it's not the specified model, it can be returned or exchanged to avoid losses).
+- An important reference is that if the sum of the port bandwidths of the network card you buy exceeds the bandwidth provided by PCIe, it will 100% not run at full speed. Don't assume it's a 100G network card just because you see a QSFP28 interface. Don't think that two QSFP+ interfaces with PCIe 3.0 x8 are enough. There's no magic.
+- Sellers often mislabel network cards, such as selling 50G/56G network cards as 100G network cards. Trust me, they don't understand either. Look at the table below, with over 200 models, it's much larger than the multiplication table. It's normal to get confused. Be sure to carefully confirm the model.
+- VPI cards support both Ethernet and Infiniband. However, note that earlier VPI cards, although supporting 40G Infiniband, only have 10G Ethernet (Connectx-2 VPI series, ConnectX-3 VPI's MCX353A-QCBT, MCX354A-QCBT).
+- It has been confirmed that cards of the same series are likely to use the same chip model, so there is a possibility of unlocking speed/changing from single port to dual port by changing firmware. For example, our famous [OCP2PCIe adapter project](https://github.com/KCORES/OCP2PCIe).
+- Since Mellanox is also an IC supplier, there are many OEM/custom network cards, so this list may not be complete. When encountering OEM cards, be sure to carefully identify the model.
+- This document uses the [KCORES](https://github.com/KCORES/kcores-license) license. Reposting / Forking this document should also use the KCORES license, please note.
+- Contributions to the document are welcome. Errors can be submitted to Github Issues.
 
 
 # Product Lists
@@ -434,7 +431,6 @@ Mellanox(NVIDIA)-nic-list-zh-CN.md
 | BLUEFIELD-2 DPU        | https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/documents/datasheet-nvidia-bluefield-2-dpu.pdf            |
 | BlueField SmartNIC     | https://www.mellanox.com/related-docs/prod_adapter_cards/PB_BlueField_Smart_NIC.pdf                                      |
 | BlueField SmartNIC DPU | https://www.mellanox.com/related-docs/npu-multicore-processors/PB_BlueField_Storage_Controller_Card.pdf                  |
-| BlueField 1600 Series  | https://docs.nvidia.com/nvidia-bluefield-bf1600-infiniband-ethernet-controller-card-user-manual.pdf                      |
 
 
 
