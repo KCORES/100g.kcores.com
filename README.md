@@ -5,9 +5,9 @@
 
 # Desc
 
-Mellanox (Nvidia) 网卡型号众多, 有不少朋友买错型号, 因此整理了一份型号列表供大家参考.  
-Mellanox (Nvidia) has numerous network card models. Many people have bought the wrong models, so this list of models has been compiled for reference. 
-Mellanox（Nvidia）のネットワークカードは多数のモデルがあり、多くの人が間違ったモデルを購入してしまうため、参考用にモデルリストをまとめました。
+Mellanox (Nvidia) 网卡型号众多, 有不少朋友买错型号, 因此整理了一份型号列表供大家参考.   
+Mellanox (Nvidia) has numerous network card models. Many people have bought the wrong models, so this list of models has been compiled for reference.  
+Mellanox（Nvidia）のネットワークカードは多数のモデルがあり、多くの人が間違ったモデルを購入してしまうため、参考用にモデルリストをまとめました。 
 
 # Index
 
